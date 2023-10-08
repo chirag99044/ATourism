@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="220sp"
+            android:scaleType="centerCrop"
+            app:iss_auto_cycle="true"
+            app:iss_delay="2000"
+            app:iss_period="3000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblHotel"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="24sp"
+            android:fontFamily="@font/raleway_extrabolditalic"
+            android:textColor="@color/black_white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_slider"
+            tools:text="Ramada by Wyndham Gandhidham Shinay" />
+
+        <TextView
+            android:id="@+id/lblCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="4sp"
+            android:layout_marginEnd="12sp"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black_white"
+            android:textSize="17sp"
+            android:text="@string/city"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblCountryName"/>
+
+        <TextView
+            android:id="@+id/lblCityName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="9sp"
+            android:layout_marginEnd="24sp"
+            android:fontFamily="@font/raleway_extrabolditalic"
+            tools:text="Agra"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black_white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/lblCity"
+            app:layout_constraintTop_toBottomOf="@id/lblCountryName" />
+
+
+
+        <TextView
+            android:id="@+id/lblCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4sp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:text="@string/country"
+            android:textColor="@color/black_white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lblHotel" />
+
+        <TextView
+            android:id="@+id/lblCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="11sp"
+            android:layout_marginEnd="14sp"
+            android:fontFamily="@font/raleway_extrabolditalic"
+            tools:text="India"
+            android:textColor="@color/black_white"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/lblCountry"
+            app:layout_constraintTop_toBottomOf="@id/lblHotel" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/raleway_extrabolditalic"
+            android:text="@string/details"
+            android:textColor="#1E88E5"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblCity" />
+        <TextView
+            android:id="@+id/Prise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="14sp"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:text="@string/price"
+            android:textColor="@color/black_white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/lblPerDayPrise"
+            app:layout_constraintBottom_toTopOf="@id/divider" />
+
+        <TextView
+            android:id="@+id/lblPerDayPrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="14sp"
+            android:layout_marginBottom="10sp"
+            android:fontFamily="@font/raleway_extrabolditalic"
+            tools:text="2000Rs"
+            android:textColor="@color/price"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/divider" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="4sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="10sp"
+            app:layout_constraintStart_toStartOf="@+id/divider2"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/lblHotelDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/raleway_extrabolditalic"
+            tools:text="Description here"
+            android:textColor="@color/black_white"
+            android:textSize="18sp"
+            android:justificationMode="inter_word"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:ignore="UnusedAttribute" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="4sp"
+            android:layout_marginStart="17sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblHotelDescription"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/lblBookFor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="12sp"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black_white"
+            android:textSize="20sp"
+            android:text="@string/book_for"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider2"/>
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/txtBookFor"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:hint="@string/booking_for"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/raleway_extrabolditalic"
+            android:background="@drawable/booking_editext"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="10sp"
+            app:layout_constraintTop_toBottomOf="@+id/lblBookFor"
+            android:autofillHints="For Whom" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dtArrivalDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/booking_editext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtBookFor">
+
+            <ImageView
+                android:id="@+id/iconArrivalDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:backgroundTint="@color/green_green"
+                android:padding="10sp"
+                android:src="@drawable/ic_calender"
+                android:text="@string/select_booking_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/white"
+                android:contentDescription="@string/calenderimage"/>
+
+            <TextView
+                android:id="@+id/lblArrivalDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jura_bold"
+                android:textStyle="bold"
+                android:layout_marginStart="20sp"
+                android:hint="@string/select_arrival_date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iconArrivalDate"
+                android:textSize="20sp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dtLeavingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/booking_editext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dtArrivalDate">
+
+            <ImageView
+                android:id="@+id/iconLeavingDate"
+                android:contentDescription="@string/calenderimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:backgroundTint="@color/green_green"
+                android:padding="10sp"
+                android:src="@drawable/ic_calender"
+                android:text="@string/select_booking_date"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblLeavingDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jura_bold"
+                android:textStyle="bold"
+                android:layout_marginStart="20sp"
+                android:hint="@string/select_leaving_date"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iconLeavingDate"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/LastLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20sp"
+            android:layout_marginHorizontal="20sp"
+            android:weightSum="3"
+            app:layout_constraintTop_toBottomOf="@id/dtLeavingDate">
+
+
+            <EditText
+                android:id="@+id/txtTotalRooms"
+                android:layout_width="0sp"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                android:background="@drawable/booking_editext"
+                android:fontFamily="@font/raleway_extrabolditalic"
+                android:hint="@string/rooms"
+                android:inputType="number"
+                android:padding="10sp"
+                android:textSize="16sp"
+                tools:ignore="LabelFor,TouchTargetSizeCheck"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/txtTotalDays"
+                android:layout_width="0sp"
+                android:layout_height="40sp"
+                android:text="@string/days"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:padding="10sp"
+                android:layout_marginStart="20sp"
+                android:background="@drawable/booking_editext"
+                android:fontFamily="@font/raleway_extrabolditalic"/>
+
+            <TextView
+                android:id="@+id/txtTotalPrice"
+                android:layout_width="0sp"
+                android:layout_height="40sp"
+                android:text="@string/Price"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="10sp"
+                android:layout_marginStart="20sp"
+                android:background="@drawable/booking_editext"
+                android:fontFamily="@font/raleway_extrabolditalic"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBooking"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="20sp"
+            android:backgroundTint="#1976D2"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:text="@string/book_hotel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LastLayout"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

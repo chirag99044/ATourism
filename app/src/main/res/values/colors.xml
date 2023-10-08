@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    system default color-->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#4150D5</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="price">#689F38</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    Dark them apply color-->
+    <color name="black_white">#FF000000</color>
+    <color name="white_black">#FFFFFFFF</color>
+    <color name="green_green">#303F9F</color>
+    <color name="login_signup_background">#fcfff9</color>
+    <color name="white_lightBlack">#FFFFFFFF</color>
+    <color name="gray_formalgray">#f3f9e9</color>
+    <color name="gray_anchorgrey">#FFFFFFFF</color>
+    <color name="bottom_Nav_Background">#eaf4fc</color>
+    <color name="blue_white">#3A3AC3</color>
+    <color name="offWhite_black">#ffffe4</color>
+    <color name="bottom_nav_color">#454545</color>
+
+<!--    Only apply white them-->
+    <color name="blue">#3A3AC3</color>
+    <color name="mycolor">#A020F0</color>
+    <color name="aliceblue">#D7ECFF</color>
+    <color name="lightblue">#a1c4fd</color>
+    <color name="lightblack">#454545</color>
+    <color name="colorPrimary">#4150D5</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="AlienBlack">#4FA5D3</color>
+    <color name="about_heading">#202b70</color>
+    <color name="white_lightblack">#CACACA</color>
+    <color name="navBar_Color">@color/black</color>
+    <color name="CardColor">#eaf4fc</color>
+
+
+</resources>
